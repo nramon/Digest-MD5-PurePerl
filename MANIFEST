@@ -1,0 +1,11 @@
+CHANGES
+COPYING
+INSTALL
+lib/Digest/MD5/PurePerl.pm
+Makefile.PL
+MANIFEST			This list of files
+README.pod
+t/0_use.t
+t/1_undef.t
+t/2_empty.t
+t/3_md5.t
