@@ -1,3 +1,5 @@
+=for HTML <a href="https://travis-ci.org/nramon/Digest-MD5-PurePerl"><img src="https://travis-ci.org/nramon/Digest-MD5-PurePerl.svg?branch=master" /></a>
+
 =head1 NAME
 
 Digest::MD5::PurePerl - Pure Perl implementation of the MD5 algorithm.
