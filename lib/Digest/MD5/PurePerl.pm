@@ -74,7 +74,7 @@ our @K = (
 # Return the MD5 checksum of the given string as a hex string.
 # Pseudocode from: http://en.wikipedia.org/wiki/MD5#Pseudocode
 ###############################################################################
-sub md5 ($) {
+sub md5 {
 	my $str = shift;
 
 	# No input!
@@ -168,7 +168,7 @@ sub md5 ($) {
 ###############################################################################
 # MD5 leftrotate function. See: http://en.wikipedia.org/wiki/MD5#Pseudocode
 ###############################################################################
-sub leftrotate ($$) {
+sub leftrotate {
 	my ($x, $c) = @_;
 
 	return (0xFFFFFFFF & ($x << $c)) | ($x >> (32 - $c));
