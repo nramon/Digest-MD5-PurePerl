@@ -1,4 +1,4 @@
-=for HTML <a href="https://travis-ci.org/nramon/Digest-MD5-PurePerl"><img src="https://travis-ci.org/nramon/Digest-MD5-PurePerl.svg?branch=master" /></a><a href="https://codecov.io/gh/nramon/Digest-MD5-PurePerl"><img src="https://codecov.io/gh/nramon/Digest-MD5-PurePerl/branch/master/graph/badge.svg" alt="Codecov" /></a>
+=for HTML <a href="https://travis-ci.org/nramon/Digest-MD5-PurePerl"><img src="https://travis-ci.org/nramon/Digest-MD5-PurePerl.svg?branch=master" /></a>&nbsp;<a href="https://codecov.io/gh/nramon/Digest-MD5-PurePerl"><img src="https://codecov.io/gh/nramon/Digest-MD5-PurePerl/branch/master/graph/badge.svg" alt="Codecov" /></a>
 
 =head1 NAME
 
