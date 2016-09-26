@@ -18,7 +18,7 @@ use strict;
 use warnings;
 use vars qw($VERSION @ISA %EXPORT_TAGS @EXPORT_OK @EXPORT);
 
-$VERSION = '1.0.0';
+$VERSION = '1.0.1';
 
 # Items to export into callers namespace by default. Note: do not export
 # names by default without a very good reason. Use EXPORT_OK instead.
@@ -103,7 +103,8 @@ sub md5 {
 
 	# Append bit /* bit, not byte */ length of unpadded message as 64-bit
 	# little-endian integer to message.
-	$msg .= unpack ("B64", pack ("VV", $bit_len));
+	$msg .= unpack ("B32", pack ("V", $bit_len));
+	$msg .= unpack ("B32", pack ("V", $bit_len >> 32));
 
 	# Process the message in successive 512-bit chunks.
 	for (my $i = 0; $i < length ($msg); $i += 512) {
