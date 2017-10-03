@@ -104,7 +104,9 @@ sub md5 {
 	# Append bit /* bit, not byte */ length of unpadded message as 64-bit
 	# little-endian integer to message.
 	$msg .= unpack ("B32", pack ("V", $bit_len));
-	$msg .= unpack ("B32", pack ("V", $bit_len >> 32));
+	# Do two 16 bit shifts, since the behaviour of a 32 bit shift on a 32 bit
+	# integer is undefined.
+	$msg .= unpack ("B32", pack ("V", ($bit_len >> 16) >> 16));
 
 	# Process the message in successive 512-bit chunks.
 	for (my $i = 0; $i < length ($msg); $i += 512) {
